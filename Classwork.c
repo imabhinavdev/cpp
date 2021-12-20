@@ -46,11 +46,8 @@ void main()
     else if (per>=33 && sup<3)
         printf("\nYou are in third division");
 
-    // else if (sup>3)
-    //     printf("\nYou are fail\nBetter luck next time");
     
     else
         printf("\nYou are fail");
 
-    // return 0;
 }
