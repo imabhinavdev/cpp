@@ -48,6 +48,6 @@ void main()
 
     
     else
-        printf("\nYou are fail");
+        printf("\nYou are fail"); 
 
 }
