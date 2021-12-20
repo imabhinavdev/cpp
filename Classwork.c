@@ -34,7 +34,7 @@ void main()
     total = m1 + m2 + m3 + m4 + m5;
     per = total / 5;
 
-    printf("Dear user your total marks are %d and percentage is %d %", total, per);
+    printf("Dear user your total marks are %d and percentage is %d %\n", total, per);
 
 
     if (per>69.9 && sup<3)
@@ -44,10 +44,34 @@ void main()
         printf("\n You are in second division");
 
     else if (per>=33 && sup<3)
-        printf("\nYou are in third division");
+        printf("\nYou are in third division\n\n");
 
     
     else
-        printf("\nYou are fail"); 
+        printf("\nYou are fail\n");
 
+
+    if (m1<33)
+    {
+        printf(" You failed in 1 sub\n");
+    }
+    if (m2<33)
+    {
+        printf(" You failed in 2 sub\n");
+    }
+
+    if (m3<33)
+    {
+        printf(" You failed in 3 sub\n");
+    }
+
+    if (m4<33)
+    {
+        printf(" You failed in 4 sub\n");
+    }
+
+    if (m5<33)
+    {
+        printf(" Back in 5 sub\n"); 
+    }
 }
