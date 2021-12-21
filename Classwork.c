@@ -6,7 +6,7 @@
 void main()
 {
     int m1, m2, m3, m4, m5, sup, total, per;
-    char name[100];
+    char name[200];
     sup = 0;
     printf("Enter your name\t");
     scanf("%s", &name);
