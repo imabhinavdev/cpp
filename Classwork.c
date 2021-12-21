@@ -1,12 +1,16 @@
 #include <stdio.h>
 
 #include <conio.h>
-\\Made by Abhinav Singh
+// \\Made by Abhinav Singh
 
 void main()
 {
     int m1, m2, m3, m4, m5, sup, total, per;
+    char name[100];
     sup = 0;
+    printf("Enter your name\t");
+    scanf("%s", &name);
+
 
     printf("Enter marks of sub 1\t");
     scanf("%d", &m1);
@@ -35,7 +39,7 @@ void main()
     total = m1 + m2 + m3 + m4 + m5;
     per = total / 5;
 
-    printf("Dear user your total marks are %d and percentage is %d %\n", total, per);
+    printf("Dear %s your total marks are %d and percentage is %d \n",name,total, per);
 
 
     if (per>69.9 && sup<3)
