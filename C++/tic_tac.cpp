@@ -51,6 +51,7 @@ int main()
             cout << "Player " << --player << " Has won the game";
         }
         else if (i == 0)
+
         {
             cout << "Game over. No winner";
         }
