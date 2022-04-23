@@ -49,7 +49,7 @@ game:
             else
             {
             validguess:
-                cout << "Guess any number between 1 to 10:-  ";
+                cout << "Guess any number between 1 to 10:- ";
                 cin >> user_guess;
                 if (user_guess >= 1 && user_guess <= 10 && user_guess == guess)
                 {
