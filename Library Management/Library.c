@@ -64,6 +64,6 @@ void addbook()
     printf("\t\t\t\t\t\t\t\t\t\tBook Name:- %s", book_name);
 
     FILE *bookname;
-    bookname = fopen("BookName", "w");
+    bookname = fopen("BookName", "w"); 
     fprintf(bookname)
 }
