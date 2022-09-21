@@ -1,3 +1,6 @@
+//EXP- 
+//Sub Dt-
+//WAP to create employee class with data members such as name, id, salry. Accept input and display employee data along with it's salary through object.
 #include <iostream>
 #include <conio.h>
 using namespace std;
