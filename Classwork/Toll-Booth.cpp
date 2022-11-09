@@ -1,4 +1,14 @@
-// imagine a toll booth , car passing by the toll booth are accepted to pay rupee 50. Mostly they do but sometimes a car goes by without paying. the toll booth keeps track of thr number of cars that have gine by and of the total amount of money collected. Model this toll booth with a class called toll-booth. the two data items are total number of cars of type int and a type double to hold total amount of money collected.Design a constructor  to initiliaze both these values to 0. design a member function called Paying car which increment the car total and adds 50 rupees to the total cash. Another function callled non paying car which increments the car total but adds nothing to the cash total.Finall A member function called display which will diplay the two values : total cars, total cash.This program should allow the user push one key to count the paying cars and another key to count the non paying car. Third key to display both the values and finally to exit.
+// imagine a toll booth , car passing by the toll booth are accepted to pay rupee 50.
+/*Mostly they do but sometimes a car goes by without paying. the toll booth keeps track of thr
+number of cars that have gine by and of the total amount of money collected.
+Model this toll booth with a class called toll-booth. the two data items are total number of
+cars of type int and a type double to hold total amount of money collected.Design a constructor
+  to initiliaze both these values to 0. design a member function called Paying car which
+  increment the car total and adds 50 rupees to the total cash. Another function callled non
+  paying car which increments the car total but adds nothing to the cash total.Finall A member
+  function called display which will diplay the two values : total cars, total cash.This
+  program should allow the user push one key to count the paying cars and another key to count
+  the non paying car. Third key to display both the values and finally to exit.*/
 #include <iostream>
 using namespace std;
 
