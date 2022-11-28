@@ -99,6 +99,30 @@ public:
         }
         cout << endl;
     }
+    int insert_at_key(int key, int data)
+    {
+        node *temp = head;
+        node *newNode = new node(data);
+
+        if (temp == NULL)
+        {
+            cout << "the linked list is empty." << endl;
+            return 0;
+        }
+        while (temp != NULL)
+        {
+            if (temp->data == key)
+            {
+                newNode->next = temp->next;
+                temp->next = newNode;
+                newNode->prev = temp;
+                cout << "Data inserted !" << endl;
+                return 0;
+            }
+            temp = temp->next;
+        }
+        cout << "Data not inserted !" << endl;
+    }
 };
 
 int main()
@@ -106,9 +130,9 @@ int main()
     Action obj;
 Menu:
     system("cls");
-    int choice, data, position;
+    int choice, data, position, key;
     cout << "#### Linked List ####" << endl;
-    cout << "\t1.Insertion at head\n\t2.Insertion at tail\n\t3.Deletion\n\t4.Print\n\t5.Exit\n";
+    cout << "\t1.Insertion at head\n\t2.Insertion at tail\n\t3.Deletion\n\t4.Print\n\t5.Insert at key \n\t6.Exit\n";
     cin >> choice;
     switch (choice)
     {
@@ -133,6 +157,14 @@ Menu:
         goto Menu;
     case 4:
         obj.print();
+        system("pause");
+        goto Menu;
+    case 5:
+        cout << "Enter the key  !" << endl;
+        cin >> key;
+        cout << "Enter the data you want to insert !" << endl;
+        cin >> data;
+        obj.insert_at_key(key, data);
         system("pause");
         goto Menu;
 
