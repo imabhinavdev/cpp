@@ -11,5 +11,3 @@ Library Management folder include program/project that I have made so far.
 ## Contact
 For any queries, feel free to connect with me - abhinavas430@gmail.com
 
-Visit my Website - https://abhinavsingh.me
-
