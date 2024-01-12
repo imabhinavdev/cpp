@@ -1,5 +1,6 @@
 # Containers
 ## Pairs
+
 ```cpp
 pair<int,string> p;
 p=make_pair(3,"abc");
@@ -7,6 +8,7 @@ p={4,"cde"};
 cout<<p.first<<p.second<<endl;
 ```
 #### Pair Array
+
 ```cpp
 pair<int,int> p[3];
 p[0]={1,4};
@@ -26,6 +28,7 @@ Dynamic Array
 * Vector Pop
 * Vector Size
 * Vector Reference
+
 ```cpp
 vector <int> v;
 v.push_back(); //O(1)
@@ -73,6 +76,7 @@ cout<<(it1->second);
 
 #### Iterator using C++ 11 | Auto Keyword
 * Range Based Loops
+
 ```cpp
 vector<int>v;
 for(int val:v)
@@ -92,9 +96,11 @@ for(pair<int,int> &val:vp)
     cout<<val.first<<" "<<val.second;
 }
 ```
+
 * **Auto Keyword**
 
 Auto Keyword can automatically understands the datatype. 
+
 ```cpp
 auto a=1;
 auto b="abc";
@@ -113,6 +119,7 @@ for(auto &val:vp)
 
 Key-value pair is stored.
 * .size() - gievs the size of the map.
+
 ```cpp
 map<int,string> m;
 m[1]="abc"; //O(logn)
@@ -131,6 +138,7 @@ m.erase(5);//removes keys and values
 m.erase(m.find(3));
 m.clear(); //clears everything
 ```
+
 >Insertion of keys of string is **string.size()\*log(n)**
 
 #### Unordered Maps
@@ -158,4 +166,112 @@ s.insert("def");
 s.insert("ghi");
 auto it=s.find("abc")//O(log(n)) returns iterator else returns s.end()
 s.erase("avc");//removes the record.
+```
+
+#### Multiset
+
+```cpp
+multiset<string> s;
+s.find(); //returns the iterator of first match.
+s.erase('abc');// delete all values abc or else if we pass the iterator then it will delete only one
+
+```
+
+
+## Stacks
+
+```cpp
+stack<int> a;
+a.push(3);
+a.push(4);
+a.push(5);
+a.pop();
+```
+
+## Queues
+
+```cpp
+queue<int> q;
+q.push(4);
+q.push(5);
+q.empty();
+
+q.front(); //prints the front value
+q.pop();
+```
+
+### Sorting
+
+```cpp
+sort(starting address, last address+1); //O(nlog(n))
+```
+
+``Follow Intro Sort is used in STL.``
+
+
+## Upper Bound and Lower Bound
+
+Arrays or vectors should be sorted.
+#### Lower Bound
+If the value is present in array or vector than it returns that value and if not present then it returns the value greater then the input that is present in the array.
+
+#### Upper Bound
+Returns the value more than the input value in the array.
+
+```cpp
+int arr[5];
+int *ptr=lower_bound(a,a+n,5);//returns the pointer 
+int *ptr1=lower_bound(a,a+n,5);//returns the pointer of element greater than 5.
+```
+
+
+### Minimum and Maximum Element
+
+```cpp
+vector<int> v;
+int min=*min_element(v.begin(),v.end());//returns pointer.
+int max=*max_element(v.begin(),v.end());//returns pointer.
+```
+
+### Accumulate
+Sums the array.
+```cpp
+vector<int>v;
+int sum=accumulate(v.begin(),v.end(),initialSum);//initial sum should be 0 for arrray sum
+```
+
+### Count and Find, Reverse
+Counts the element count.
+
+```cpp
+vector<int> v;
+int ct=count(v.begin(),v.end(),3);
+int ele=*find(v.begin(),v.end(),2);//returns iterator
+auto ele=find(v.begin(),v.end(),2);//returns iterator
+
+if(ele !=v.end())
+{
+    cout<<*it;
+}
+
+
+reverse(v.begin(),v.end()); //reverse vector or string
+```
+
+### Lambda Function
+
+```cpp
+cout<<[](int x,int y){return x+y;}(2,4);
+```
+
+
+### All of, None Of, Any of
+
+All of
+
+```cpp
+vector<int> v;
+cout<<all_of(v.begin(),v.end(),[](int x){return x>0;}); //if all true then true else false
+cout<<any_of(v.begin(),v.end(),[](int x){return x>0;}); //if any true then true else false
+cout<<none_of(v.begin(),v.end(),[](int x){return x>0;}); //if none are true then true else false
 ```
